@@ -105,7 +105,7 @@ Cấu hình lại chính xác ngữ cảnh build `context: .` trỏ về thư m�
     context: .
     file: ./Dockerfile
     push: true
-    tags: ghcr.io/${{ github.repository }}:latest
+    tags: ghcr.io/ptitvn/it-209-devops-session12-bai5:latest
 ```
 
 ---
@@ -167,7 +167,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/ptitvn/it-209-devops-session12-bai5:latest
 ```
 
 ---

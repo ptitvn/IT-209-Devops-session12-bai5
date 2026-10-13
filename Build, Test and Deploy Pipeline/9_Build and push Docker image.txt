@@ -1,0 +1,173 @@
+﻿2026-10-13T12:38:14.4604739Z ##[group]Run docker/build-push-action@v5
+2026-10-13T12:38:14.4604984Z with:
+2026-10-13T12:38:14.4605139Z   context: .
+2026-10-13T12:38:14.4605302Z   file: ./Dockerfile
+2026-10-13T12:38:14.4605470Z   push: true
+2026-10-13T12:38:14.4605687Z   tags: ghcr.io/ptitvn/IT-209-Devops-session12-bai5:latest
+2026-10-13T12:38:14.4605943Z   load: false
+2026-10-13T12:38:14.4606118Z   no-cache: false
+2026-10-13T12:38:14.4606282Z   pull: false
+2026-10-13T12:38:14.4608401Z   github-token: ***
+2026-10-13T12:38:14.4608571Z env:
+2026-10-13T12:38:14.4608810Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-13T12:38:14.4609191Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-13T12:38:14.4609484Z ##[endgroup]
+2026-10-13T12:38:14.6374862Z (node:2935) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-13T12:38:14.6375513Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-13T12:38:14.6387565Z ##[group]GitHub Actions runtime token ACs
+2026-10-13T12:38:14.6393168Z refs/heads/main: read/write
+2026-10-13T12:38:14.6393735Z ##[endgroup]
+2026-10-13T12:38:14.6394202Z ##[group]Docker info
+2026-10-13T12:38:14.6420815Z [command]/usr/bin/docker version
+2026-10-13T12:38:14.6589198Z Client: Docker Engine - Community
+2026-10-13T12:38:14.6589861Z  Version:           28.0.4
+2026-10-13T12:38:14.6590372Z  API version:       1.48
+2026-10-13T12:38:14.6590854Z  Go version:        go1.23.7
+2026-10-13T12:38:14.6591291Z  Git commit:        b8034c0
+2026-10-13T12:38:14.6591726Z  Built:             Tue Mar 25 15:07:16 2025
+2026-10-13T12:38:14.6592203Z  OS/Arch:           linux/amd64
+2026-10-13T12:38:14.6592636Z  Context:           default
+2026-10-13T12:38:14.6592948Z 
+2026-10-13T12:38:14.6593203Z Server: Docker Engine - Community
+2026-10-13T12:38:14.6593635Z  Engine:
+2026-10-13T12:38:14.6593994Z   Version:          28.0.4
+2026-10-13T12:38:14.6594427Z   API version:      1.48 (minimum version 1.24)
+2026-10-13T12:38:14.6594926Z   Go version:       go1.23.7
+2026-10-13T12:38:14.6595339Z   Git commit:       6430e49
+2026-10-13T12:38:14.6595764Z   Built:            Tue Mar 25 15:07:16 2025
+2026-10-13T12:38:14.6596218Z   OS/Arch:          linux/amd64
+2026-10-13T12:38:14.6596634Z   Experimental:     false
+2026-10-13T12:38:14.6597040Z  containerd:
+2026-10-13T12:38:14.6598026Z   Version:          v2.3.6
+2026-10-13T12:38:14.6598536Z   GitCommit:        ee2735368117d2eb259779949d5e75cdafec9761
+2026-10-13T12:38:14.6599055Z  runc:
+2026-10-13T12:38:14.6599415Z   Version:          1.5.1
+2026-10-13T12:38:14.6599832Z   GitCommit:        v1.5.1-0-g8f2685a4
+2026-10-13T12:38:14.6600282Z  docker-init:
+2026-10-13T12:38:14.6600662Z   Version:          0.19.0
+2026-10-13T12:38:14.6601075Z   GitCommit:        de40ad0
+2026-10-13T12:38:14.6630656Z [command]/usr/bin/docker info
+2026-10-13T12:38:14.7020577Z Client: Docker Engine - Community
+2026-10-13T12:38:14.7021062Z  Version:    28.0.4
+2026-10-13T12:38:14.7021334Z  Context:    default
+2026-10-13T12:38:14.7021633Z  Debug Mode: false
+2026-10-13T12:38:14.7021886Z  Plugins:
+2026-10-13T12:38:14.7022149Z   buildx: Docker Buildx (Docker Inc.)
+2026-10-13T12:38:14.7022581Z     Version:  v0.37.2
+2026-10-13T12:38:14.7023037Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+2026-10-13T12:38:14.7023533Z   compose: Docker Compose (Docker Inc.)
+2026-10-13T12:38:14.7023941Z     Version:  v2.38.2
+2026-10-13T12:38:14.7024330Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+2026-10-13T12:38:14.7024675Z 
+2026-10-13T12:38:14.7024922Z Server:
+2026-10-13T12:38:14.7025382Z  Containers: 1
+2026-10-13T12:38:14.7025740Z   Running: 1
+2026-10-13T12:38:14.7026072Z   Paused: 0
+2026-10-13T12:38:14.7026306Z   Stopped: 0
+2026-10-13T12:38:14.7026535Z  Images: 7
+2026-10-13T12:38:14.7026775Z  Server Version: 28.0.4
+2026-10-13T12:38:14.7027069Z  Storage Driver: overlay2
+2026-10-13T12:38:14.7027534Z   Backing Filesystem: extfs
+2026-10-13T12:38:14.7027844Z   Supports d_type: true
+2026-10-13T12:38:14.7028516Z   Using metacopy: false
+2026-10-13T12:38:14.7028800Z   Native Overlay Diff: false
+2026-10-13T12:38:14.7029083Z   userxattr: false
+2026-10-13T12:38:14.7029360Z  Logging Driver: json-file
+2026-10-13T12:38:14.7029651Z  Cgroup Driver: systemd
+2026-10-13T12:38:14.7029922Z  Cgroup Version: 2
+2026-10-13T12:38:14.7030156Z  Plugins:
+2026-10-13T12:38:14.7030382Z   Volume: local
+2026-10-13T12:38:14.7030676Z   Network: bridge host ipvlan macvlan null overlay
+2026-10-13T12:38:14.7031225Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+2026-10-13T12:38:14.7031708Z  Swarm: inactive
+2026-10-13T12:38:14.7031992Z  Runtimes: runc io.containerd.runc.v2
+2026-10-13T12:38:14.7032338Z  Default Runtime: runc
+2026-10-13T12:38:14.7032618Z  Init Binary: docker-init
+2026-10-13T12:38:14.7033000Z  containerd version: ee2735368117d2eb259779949d5e75cdafec9761
+2026-10-13T12:38:14.7033443Z  runc version: v1.5.1-0-g8f2685a4
+2026-10-13T12:38:14.7033764Z  init version: de40ad0
+2026-10-13T12:38:14.7034026Z  Security Options:
+2026-10-13T12:38:14.7034273Z   apparmor
+2026-10-13T12:38:14.7034507Z   seccomp
+2026-10-13T12:38:14.7034730Z    Profile: builtin
+2026-10-13T12:38:14.7034972Z   cgroupns
+2026-10-13T12:38:14.7035214Z  Kernel Version: 6.17.0-1022-azure
+2026-10-13T12:38:14.7035541Z  Operating System: Ubuntu 24.04.5 LTS
+2026-10-13T12:38:14.7035883Z  OSType: linux
+2026-10-13T12:38:14.7036148Z  Architecture: x86_64
+2026-10-13T12:38:14.7036413Z  CPUs: 4
+2026-10-13T12:38:14.7036648Z  Total Memory: 15.61GiB
+2026-10-13T12:38:14.7036929Z  Name: runnervmmprz5
+2026-10-13T12:38:14.7037216Z  ID: 07f0e779-c305-4162-b8ec-c48c30f52fbe
+2026-10-13T12:38:14.7037713Z  Docker Root Dir: /var/lib/docker
+2026-10-13T12:38:14.7038012Z  Debug Mode: false
+2026-10-13T12:38:14.7038271Z  Username: githubactions
+2026-10-13T12:38:14.7038541Z  Experimental: false
+2026-10-13T12:38:14.7050186Z  Insecure Registries:
+2026-10-13T12:38:14.7050512Z   ::1/128
+2026-10-13T12:38:14.7050740Z   127.0.0.0/8
+2026-10-13T12:38:14.7051014Z  Live Restore Enabled: false
+2026-10-13T12:38:14.7051218Z 
+2026-10-13T12:38:14.7053455Z ##[endgroup]
+2026-10-13T12:38:14.7054012Z ##[group]Proxy configuration
+2026-10-13T12:38:14.7056100Z No proxy configuration found
+2026-10-13T12:38:14.7057872Z ##[endgroup]
+2026-10-13T12:38:14.7541300Z ##[group]Buildx version
+2026-10-13T12:38:14.7559982Z [command]/usr/bin/docker buildx version
+2026-10-13T12:38:14.7941250Z github.com/docker/buildx v0.37.2 2d379c0c3f22da0d2759d132a0ec81ca949098f0
+2026-10-13T12:38:14.7972191Z ##[endgroup]
+2026-10-13T12:38:14.7972688Z ##[group]Builder info
+2026-10-13T12:38:14.8704734Z {
+2026-10-13T12:38:14.8705290Z   "nodes": [
+2026-10-13T12:38:14.8705898Z     {
+2026-10-13T12:38:14.8706582Z       "name": "builder-bfa00b1d-4f4d-428b-9992-f5a617810cd00",
+2026-10-13T12:38:14.8707165Z       "endpoint": "unix:///var/run/docker.sock",
+2026-10-13T12:38:14.8707749Z       "status": "running",
+2026-10-13T12:38:14.8708566Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+2026-10-13T12:38:14.8709295Z       "buildkit": "v0.33.1",
+2026-10-13T12:38:14.8709764Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/amd64/v4,linux/386",
+2026-10-13T12:38:14.8710268Z       "features": {
+2026-10-13T12:38:14.8710695Z         "Automatically load images to the Docker Engine image store": true,
+2026-10-13T12:38:14.8711180Z         "Cache export": true,
+2026-10-13T12:38:14.8711501Z         "Direct push": true,
+2026-10-13T12:38:14.8711724Z         "Docker exporter": true,
+2026-10-13T12:38:14.8711934Z         "Multi-platform build": true,
+2026-10-13T12:38:14.8712147Z         "OCI exporter": true
+2026-10-13T12:38:14.8712339Z       },
+2026-10-13T12:38:14.8712488Z       "labels": {
+2026-10-13T12:38:14.8712707Z         "org.mobyproject.buildkit.worker.executor": "oci",
+2026-10-13T12:38:14.8713038Z         "org.mobyproject.buildkit.worker.hostname": "cc59b2cbeaa9",
+2026-10-13T12:38:14.8713353Z         "org.mobyproject.buildkit.worker.network": "host",
+2026-10-13T12:38:14.8713947Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+2026-10-13T12:38:14.8714304Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+2026-10-13T12:38:14.8714672Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+2026-10-13T12:38:14.8714936Z       },
+2026-10-13T12:38:14.8715092Z       "gcPolicy": [
+2026-10-13T12:38:14.8715264Z         {
+2026-10-13T12:38:14.8715420Z           "all": false,
+2026-10-13T12:38:14.8715590Z           "filter": [
+2026-10-13T12:38:14.8715861Z             "type==source.local type==exec.cachemount type==source.git.checkout"
+2026-10-13T12:38:14.8716151Z           ],
+2026-10-13T12:38:14.8716320Z           "keepDuration": "48h0m0s"
+2026-10-13T12:38:14.8716517Z         },
+2026-10-13T12:38:14.8716665Z         {
+2026-10-13T12:38:14.8716815Z           "all": false,
+2026-10-13T12:38:14.8716998Z           "keepDuration": "1440h0m0s"
+2026-10-13T12:38:14.8717190Z         },
+2026-10-13T12:38:14.8717332Z         {
+2026-10-13T12:38:14.8718286Z           "all": false
+2026-10-13T12:38:14.8718578Z         },
+2026-10-13T12:38:14.8718793Z         {
+2026-10-13T12:38:14.8718959Z           "all": true
+2026-10-13T12:38:14.8719117Z         }
+2026-10-13T12:38:14.8719289Z       ]
+2026-10-13T12:38:14.8719443Z     }
+2026-10-13T12:38:14.8719656Z   ],
+2026-10-13T12:38:14.8719973Z   "name": "builder-bfa00b1d-4f4d-428b-9992-f5a617810cd0",
+2026-10-13T12:38:14.8720399Z   "driver": "docker-container",
+2026-10-13T12:38:14.8720612Z   "lastActivity": "2026-10-13T12:38:08.000Z"
+2026-10-13T12:38:14.8720817Z }
+2026-10-13T12:38:14.8721247Z ##[endgroup]
+2026-10-13T12:38:15.0005528Z [command]/usr/bin/docker buildx build --file ./Dockerfile --iidfile /home/runner/work/_temp/docker-actions-toolkit-8yBM50/build-iidfile-6740cd10af.txt --attest type=provenance,mode=max,builder-id=https://github.com/ptitvn/IT-209-Devops-session12-bai5/actions/runs/38398676939 --tag ghcr.io/ptitvn/IT-209-Devops-session12-bai5:latest --metadata-file /home/runner/work/_temp/docker-actions-toolkit-8yBM50/build-metadata-d00ace6079.json --push .
+2026-10-13T12:38:15.1007849Z ERROR: failed to build: invalid tag "ghcr.io/ptitvn/IT-209-Devops-session12-bai5:latest": repository name must be lowercase
+2026-10-13T12:38:15.1045420Z ##[error]buildx failed with: ERROR: failed to build: invalid tag "ghcr.io/ptitvn/IT-209-Devops-session12-bai5:latest": repository name must be lowercase
